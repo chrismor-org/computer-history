@@ -1,6 +1,6 @@
 # Computer History
 
-This is really just for fun as a way of teaching myself aBOUT Graph Databases.
+This is really just for fun as a way of teaching myself about Graph Databases.
 
 The code will probably make others laugh or cry but that's OK, I have to start somewhere.
 
