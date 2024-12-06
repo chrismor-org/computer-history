@@ -1,6 +1,6 @@
 CREATE (os:Operating_System {os_name: 'ADMIRAL'});
 CREATE (os:Operating_System {os_name: 'Airline Control Program'});
-CREATE (os:Operating_System {os_name: 'ATLAS Supervisor'});
+CREATE (os:Operating_System {os_name: 'ATLAS Supervisor', introduced: 1957, runs_on: ['ATLAS'], creator: 'Manchester University'});
 CREATE (os:Operating_System {os_name: 'BBN Timesharing System'});
 CREATE (os:Operating_System {os_name: 'Berkeley Timesharing System'});
 CREATE (os:Operating_System {os_name: 'BESYS'});
@@ -37,7 +37,7 @@ CREATE (os:Operating_System {os_name: 'JOSS'});
 CREATE (os:Operating_System {os_name: 'KDF9 Timesharing Director'});
 CREATE (os:Operating_System {os_name: 'LEO Monitor', introduced: 1951, runs_on: ['LEO 1'], creator: 'J. Lyons and Co'});
 CREATE (os:Operating_System {os_name: 'Livermore Time Sharing System'});
-CREATE (os:Operating_System {os_name: 'Master Control Program'});
+CREATE (os:Operating_System {os_name: 'Master Control Program', introduced: 1961, runs_on: ['B2500', 'B2700', 'B2800', 'B2900', 'B3500', 'B3700', 'B3800', 'B3900', 'B4700', 'B4800', 'B4900', 'B5000', 'B5500', 'B5700', 'B6500', 'B6700', 'B7700'], creator: 'Burroughs'});
 CREATE (os:Operating_System {os_name: 'Michigan Terminal System'});
 CREATE (os:Operating_System {os_name: 'MIT CTSS'});
 CREATE (os:Operating_System {os_name: 'MIT ITS'});
@@ -51,6 +51,7 @@ CREATE (os:Operating_System {os_name: 'Multics'});
 CREATE (os:Operating_System {os_name: 'NCR B1'});
 CREATE (os:Operating_System {os_name: 'NCR B2'});
 CREATE (os:Operating_System {os_name: 'NCR B3'});
+CREATE (os:Operating_System {os_name: 'OMEGA', introduced: 1965, runs_on: ['494'], creator: 'Sperry'});
 CREATE (os:Operating_System {os_name: 'ORVYL'});
 CREATE (os:Operating_System {os_name: 'OS/360'});
 CREATE (os:Operating_System {os_name: 'OS/8'});
@@ -60,6 +61,7 @@ CREATE (os:Operating_System {os_name: 'Pick'});
 CREATE (os:Operating_System {os_name: 'PS/8'});
 CREATE (os:Operating_System {os_name: 'RCA TSOS'});
 CREATE (os:Operating_System {os_name: 'RC 4000'});
+CREATE (os:Operating_System {os_name: 'REX', introduced: 1960, runs_on: ['490', '491', '492'], creator: 'Sperry'});
 CREATE (os:Operating_System {os_name: 'RUSH'});
 CREATE (os:Operating_System {os_name: 'SHARE Operating System'});
 CREATE (os:Operating_System {os_name: 'SIPROS 66'});
@@ -80,6 +82,87 @@ CREATE (os:Operating_System {os_name: 'Xerox Operating System'});
 
 CREATE TEXT INDEX os_name_index FOR (os:Operating_System) ON (os.name);
 
+MATCH (a:Operating_System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.os_name = 'ATLAS Supervisor' AND a.introduced = b.year
+                CREATE (a)-[ry:RELEASED]->(b)
+                RETURN ry;
+MATCH (a:Operating_System)
+    WITH a
+        MATCH (b:System)
+            WHERE a.os_name = 'ATLAS Supervisor' AND  b.system_name IN a.runs_on
+                CREATE (a)-[ro:RUNS_ON]->(b)
+                RETURN ro;
+MATCH (a:Operating_System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.os_name = 'ATLAS Supervisor' AND a.creator = b.company_name
+                CREATE (a)-[cb:CREATED_BY]->(b)
+                RETURN cb;
+
+MATCH (a:Operating_System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.os_name = 'Master Control Program' AND a.introduced = b.year
+                CREATE (a)-[ry:RELEASED]->(b)
+                RETURN ry;
+MATCH (a:Operating_System)
+    WITH a
+        MATCH (b:System)
+            WHERE a.os_name = 'Master Control Program' AND  b.system_name IN a.runs_on
+                CREATE (a)-[ro:RUNS_ON]->(b)
+                RETURN ro;
+MATCH (a:Operating_System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.os_name = 'Master Control Program' AND a.creator = b.company_name
+                CREATE (a)-[cb:CREATED_BY]->(b)
+                RETURN cb;
+
+MATCH (a:Operating_System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.os_name = 'REX' AND a.creator = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[ry:RELEASED]->(b)
+                RETURN ry;
+MATCH (a:Operating_System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.os_name = 'REX' AND a.creator = 'Sperry') AND  b.system_name IN a.runs_on
+                CREATE (a)-[ro:RUNS_ON]->(b)
+                RETURN ro;
+MATCH (a:Operating_System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.os_name = 'REX' AND a.creator = 'Sperry') AND a.creator = b.company_name
+                CREATE (a)-[cb:CREATED_BY]->(b)
+                RETURN cb;
+
+MATCH (a:Operating_System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.os_name = 'OMEGA' AND a.creator = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[ry:RELEASED]->(b)
+                RETURN ry;
+MATCH (a:Operating_System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.os_name = 'OMEGA' AND a.creator = 'Sperry') AND  b.system_name IN a.runs_on
+                CREATE (a)-[ro:RUNS_ON]->(b)
+                RETURN ro;
+MATCH (a:Operating_System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.os_name = 'OMEGA' AND a.creator = 'Sperry') AND a.creator = b.company_name
+                CREATE (a)-[cb:CREATED_BY]->(b)
+                RETURN cb;
+MATCH (a:Operating_System)
+    WITH a
+        MATCH (b:Operating_System)
+            WHERE (a.os_name = 'OMEGA' AND a.creator = 'Sperry') AND (b.os_name = 'REX' AND b.creator = 'Sperry')
+                CREATE (a)-[bo:BASED_ON]->(b)
+                RETURN bo;
  
 MATCH (a:Operating_System)
     WITH a
@@ -2141,7 +2224,7 @@ MATCH (a:Operating_System), (b:System)
 
 MATCH (a:Operating_System), (b:Company)
 
-    WHERE a.os_name = 'HP Real-Time Executive' AND b.company_name = 'HP'
+    WHERE a.os_name = 'HP Real-Time Executive' AND b.company_name = 'Hewlett Packard'
 
         CREATE (a)-[mf:MADE_BY]->(b)
 
@@ -2167,7 +2250,7 @@ MATCH (a:Operating_System), (b:System)
 
 MATCH (a:Operating_System), (b:Company)
 
-    WHERE a.os_name = 'HP Test-Oriented Disk System' AND b.company_name = 'HP'
+    WHERE a.os_name = 'HP Test-Oriented Disk System' AND b.company_name = 'Hewlett Packard'
 
         CREATE (a)-[mf:MADE_BY]->(b)
 
@@ -2193,7 +2276,7 @@ MATCH (a:Operating_System), (b:Year)
 
 MATCH (a:Operating_System), (b:System)
 
-    WHERE a.os_name = 'HP Magnetic Tape Operating System' AND b.system_name = 'HP 2000 Series'
+    WHERE a.os_name = 'Hewlett Packard Magnetic Tape Operating System' AND b.system_name = 'HP 2000 Series'
 
         CREATE (a)-[ro:RUNS_ON]->(b)
 
@@ -2201,7 +2284,7 @@ MATCH (a:Operating_System), (b:System)
 
 MATCH (a:Operating_System), (b:Company)
 
-    WHERE a.os_name = 'HP Magnetic Tape Operating System' AND b.company_name = 'HP'
+    WHERE a.os_name = 'HP Magnetic Tape Operating System' AND b.company_name = 'Hewlett Packard'
 
         CREATE (a)-[mf:MADE_BY]->(b)
 

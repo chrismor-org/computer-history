@@ -1,6 +1,8 @@
 CREATE (system:System {system_name: 'ATLAS', manufacturer: 'Manchester University', introduced: 1957});
 CREATE (system:System {system_name: 'B205', manufacturer: 'Burroughs', introduced: 1971});
 CREATE (system:System {system_name: 'B1700', manufacturer: 'Burroughs', introduced: 1971});
+CREATE (system:System {system_name: 'B1800', manufacturer: 'Burroughs', introduced: 1976});
+CREATE (system:System {system_name: 'B1900', manufacturer: 'Burroughs', introduced: 1979});
 CREATE (system:System {system_name: 'B2500', manufacturer: 'Burroughs', introduced: 1966});
 CREATE (system:System {system_name: 'B2700', manufacturer: 'Burroughs', introduced: 1972});
 CREATE (system:System {system_name: 'B2800', manufacturer: 'Burroughs', introduced: 1976});
@@ -13,6 +15,13 @@ CREATE (system:System {system_name: 'B4700', manufacturer: 'Burroughs', introduc
 CREATE (system:System {system_name: 'B4800', manufacturer: 'Burroughs', introduced: 1976});
 CREATE (system:System {system_name: 'B4900', manufacturer: 'Burroughs', introduced: 1980});
 CREATE (system:System {system_name: 'B5000', manufacturer: 'Burroughs', introduced: 1961});
+CREATE (system:System {system_name: 'B5500', manufacturer: 'Burroughs', introduced: 1964});
+CREATE (system:System {system_name: 'B5700', manufacturer: 'Burroughs', introduced: 1967});
+CREATE (system:System {system_name: 'B6500', manufacturer: 'Burroughs', introduced: 1969});
+CREATE (system:System {system_name: 'B6700', manufacturer: 'Burroughs', introduced: 1971});
+CREATE (system:System {system_name: 'B7700', manufacturer: 'Burroughs', introduced: 1976});
+CREATE (system:System {system_name: 'B8500', manufacturer: 'Burroughs', introduced: 1970});
+CREATE (system:System {system_name: 'D825', manufacturer: 'Burroughs', introduced: 1960});
 CREATE (system:System {system_name: '924', manufacturer: 'Control Data Corporation', introduced: 1962});
 CREATE (system:System {system_name: '160A', manufacturer: 'Control Data Corporation', introduced: 1963});
 CREATE (system:System {system_name: '1604', manufacturer: 'Control Data Corporation', introduced: 1959});
@@ -64,15 +73,45 @@ CREATE (system:System {system_name: 'XT4', manufacturer: 'Cray', introduced: 200
 CREATE (system:System {system_name: 'XT5', manufacturer: 'Cray', introduced: 2009});
 CREATE (system:System {system_name: 'X-MP', manufacturer: 'Cray', introduced: 1982});
 CREATE (system:System {system_name: 'Y-MP', manufacturer: 'Cray', introduced: 1988});
+CREATE (system:System {system_name: 'Datatron 203', manufacturer: 'ElectroData Corporation', introduced: 1954});
 CREATE (system:System {system_name: 'X1', manufacturer: 'Electrologica', introduced: 1958});
 CREATE (system:System {system_name: 'X8', manufacturer: 'Electrologica', introduced: 1964});
 CREATE (system:System {system_name: 'Atlas', manufacturer: 'Engineering Research Associates', introduced: 1950});
 CREATE (system:System {system_name: '1101', manufacturer: 'Engineering Research Associates', introduced: 1950});
+CREATE (system:System {system_name: '1102', manufacturer: 'Engineering Research Associates', introduced: 1951});
+CREATE (system:System {system_name: '1103', manufacturer: 'Engineering Research Associates', introduced: 1953});
+CREATE (system:System {system_name: 'UNIVAC I', manufacturer: 'Sperry', introduced: 1951});
+CREATE (system:System {system_name: 'UNIVAC II', manufacturer: 'Sperry', introduced: 1958});
+CREATE (system:System {system_name: 'UNIVAC File Computer', manufacturer: 'Sperry', introduced: 1956});
+CREATE (system:System {system_name: 'UNIVAC III', manufacturer: 'Sperry', introduced: 1962});
+CREATE (system:System {system_name: '418', manufacturer: 'Sperry', introduced: 1962});
+CREATE (system:System {system_name: '490', manufacturer: 'Sperry', introduced: 1960});
+CREATE (system:System {system_name: '491', manufacturer: 'Sperry', introduced: 1965});
+CREATE (system:System {system_name: '492', manufacturer: 'Sperry', introduced: 1965});
+CREATE (system:System {system_name: '494', manufacturer: 'Sperry', introduced: 1965});
+CREATE (system:System {system_name: '1004', manufacturer: 'Sperry', introduced: 1962});
+CREATE (system:System {system_name: '1005', manufacturer: 'Sperry', introduced: 1966});
 CREATE (system:System {system_name: '1101', manufacturer: 'Sperry', introduced: 1950});
 CREATE (system:System {system_name: '1103', manufacturer: 'Sperry', introduced: 1953});
-CREATE (system:System {system_name: '1104', manufacturer: 'Sperry', introduced: 1953});
+CREATE (system:System {system_name: '1103A', manufacturer: 'Sperry', introduced: 1956});
+CREATE (system:System {system_name: '1104', manufacturer: 'Sperry', introduced: 1957});
 CREATE (system:System {system_name: '1105', manufacturer: 'Sperry', introduced: 1958});
+CREATE (system:System {system_name: '1106', manufacturer: 'Sperry', introduced: 1969});
 CREATE (system:System {system_name: '1107', manufacturer: 'Sperry', introduced: 1962});
+CREATE (system:System {system_name: '1108', manufacturer: 'Sperry', introduced: 1964});
+CREATE (system:System {system_name: '1108A', manufacturer: 'Sperry', introduced: 1964});
+CREATE (system:System {system_name: '1110', manufacturer: 'Sperry', introduced: 1964});
+CREATE (system:System {system_name: '1100/10', manufacturer: 'Sperry', introduced: 1970});
+CREATE (system:System {system_name: '1100/20', manufacturer: 'Sperry', introduced: 1970});
+CREATE (system:System {system_name: '1100/40', manufacturer: 'Sperry', introduced: 1975});
+CREATE (system:System {system_name: '1100/60', manufacturer: 'Sperry', introduced: 1979});
+CREATE (system:System {system_name: '1100/70', manufacturer: 'Sperry', introduced: 1981});
+CREATE (system:System {system_name: '1100/80', manufacturer: 'Sperry', introduced: 1979});
+CREATE (system:System {system_name: '1100/90', manufacturer: 'Sperry', introduced: 1982});
+CREATE (system:System {system_name: '9200', manufacturer: 'Sperry', introduced: 1967});
+CREATE (system:System {system_name: '9300', manufacturer: 'Sperry', introduced: 1967});
+CREATE (system:System {system_name: '9400', manufacturer: 'Sperry', introduced: 1969});
+CREATE (system:System {system_name: '9700', manufacturer: 'Sperry', introduced: 1971});
 CREATE (system:System {system_name: 'GE-205', manufacturer: 'General Electric', introduced: 1964});
 CREATE (system:System {system_name: 'GE-215', manufacturer: 'General Electric', introduced: 1963});
 CREATE (system:System {system_name: 'GE-235', manufacturer: 'General Electric', introduced: 1964});
@@ -88,27 +127,27 @@ CREATE (system:System {system_name: 'GE-635', manufacturer: 'General Electric', 
 CREATE (system:System {system_name: 'GE-645', manufacturer: 'General Electric', introduced: 1965});
 CREATE (system:System {system_name: 'GE-655', manufacturer: 'General Electric', introduced: 1967});
 CREATE (system:System {system_name: 'H-800', manufacturer: 'Honeywell', introduced: 1958});
-CREATE (system:System {system_name: '2100S', manufacturer: 'HP', introduced: 1973});
-CREATE (system:System {system_name: '1000M', manufacturer: 'HP', introduced: 1974});
-CREATE (system:System {system_name: '1000E', manufacturer: 'HP', introduced: 1976});
-CREATE (system:System {system_name: '1000F', manufacturer: 'HP', introduced: 1978});
-CREATE (system:System {system_name: '1000L', manufacturer: 'HP', introduced: 1980});
-CREATE (system:System {system_name: '1000 A400', manufacturer: 'HP', introduced: 1986});
-CREATE (system:System {system_name: '1000 A600', manufacturer: 'HP', introduced: 1981});
-CREATE (system:System {system_name: '1000 A700', manufacturer: 'HP', introduced: 1982});
-CREATE (system:System {system_name: '1000 A900', manufacturer: 'HP', introduced: 1984});
-CREATE (system:System {system_name: '3000 Series I', manufacturer: 'HP', introduced: 1977});
-CREATE (system:System {system_name: '3000 Series III', manufacturer: 'HP', introduced: 1978});
-CREATE (system:System {system_name: '3000 Series 33', manufacturer: 'HP', introduced: 1978});
-CREATE (system:System {system_name: '3000 Series 37', manufacturer: 'HP', introduced: 1985});
-CREATE (system:System {system_name: '3000 Series 48', manufacturer: 'HP', introduced: 1980});
-CREATE (system:System {system_name: '3000 Series 64', manufacturer: 'HP', introduced: 1982});
-CREATE (system:System {system_name: '9810A', manufacturer: 'HP', introduced: 1971});
-CREATE (system:System {system_name: '9820A', manufacturer: 'HP', introduced: 1972});
-CREATE (system:System {system_name: '9821A', manufacturer: 'HP', introduced: 1972});
-CREATE (system:System {system_name: '9825A', manufacturer: 'HP', introduced: 1976});
-CREATE (system:System {system_name: '9825B', manufacturer: 'HP', introduced: 1976});
-CREATE (system:System {system_name: '9830A', manufacturer: 'HP', introduced: 1972});
+CREATE (system:System {system_name: '2100S', manufacturer: 'Hewlett Packard', introduced: 1973});
+CREATE (system:System {system_name: '1000M', manufacturer: 'Hewlett Packard', introduced: 1974});
+CREATE (system:System {system_name: '1000E', manufacturer: 'Hewlett Packard', introduced: 1976});
+CREATE (system:System {system_name: '1000F', manufacturer: 'Hewlett Packard', introduced: 1978});
+CREATE (system:System {system_name: '1000L', manufacturer: 'Hewlett Packard', introduced: 1980});
+CREATE (system:System {system_name: '1000 A400', manufacturer: 'Hewlett Packard', introduced: 1986});
+CREATE (system:System {system_name: '1000 A600', manufacturer: 'Hewlett Packard', introduced: 1981});
+CREATE (system:System {system_name: '1000 A700', manufacturer: 'Hewlett Packard', introduced: 1982});
+CREATE (system:System {system_name: '1000 A900', manufacturer: 'Hewlett Packard', introduced: 1984});
+CREATE (system:System {system_name: '3000 Series I', manufacturer: 'Hewlett Packard', introduced: 1977});
+CREATE (system:System {system_name: '3000 Series III', manufacturer: 'Hewlett Packard', introduced: 1978});
+CREATE (system:System {system_name: '3000 Series 33', manufacturer: 'Hewlett Packard', introduced: 1978});
+CREATE (system:System {system_name: '3000 Series 37', manufacturer: 'Hewlett Packard', introduced: 1985});
+CREATE (system:System {system_name: '3000 Series 48', manufacturer: 'Hewlett Packard', introduced: 1980});
+CREATE (system:System {system_name: '3000 Series 64', manufacturer: 'Hewlett Packard', introduced: 1982});
+CREATE (system:System {system_name: '9810A', manufacturer: 'Hewlett Packard', introduced: 1971});
+CREATE (system:System {system_name: '9820A', manufacturer: 'Hewlett Packard', introduced: 1972});
+CREATE (system:System {system_name: '9821A', manufacturer: 'Hewlett Packard', introduced: 1972});
+CREATE (system:System {system_name: '9825A', manufacturer: 'Hewlett Packard', introduced: 1976});
+CREATE (system:System {system_name: '9825B', manufacturer: 'Hewlett Packard', introduced: 1976});
+CREATE (system:System {system_name: '9830A', manufacturer: 'Hewlett Packard', introduced: 1972});
 CREATE (system:System {system_name: 'ICL 2903', manufacturer: 'International Computers Limited', introduced: 1973});
 CREATE (system:System {system_name: 'ICL 2904', manufacturer: 'International Computers Limited', introduced: 1973});
 CREATE (system:System {system_name: 'ICT 1901', manufacturer: 'International Computers Limited', introduced: 1964});
@@ -285,8 +324,6 @@ CREATE (system:System {system_name: 'Sun Ultra Enterprise 3000'});
 CREATE (system:System {system_name: 'Sun Ultra Enterprise 4000'});
 CREATE (system:System {system_name: 'Sun Ultra Enterprise 5000'});
 CREATE (system:System {system_name: 'Sun Ultra Enterprise 6000'});
-CREATE (system:System {system_name: 'UNIVAC I'});
-CREATE (system:System {system_name: 'UNIVAC II'});
 CREATE (system:System {system_name: 'XDS Sigma Series'});
 
 CREATE TEXT INDEX system_name_index FOR (system:System) ON (system.system_name);
@@ -307,6 +344,258 @@ MATCH (a:System)
 MATCH (a:System)
     WITH a
         MATCH (b:Company)
+            WHERE a.system_name = 'B205' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B205' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B205' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'Datatron 203' AND b.manufacturer = 'ElectroData Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B1700' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B1700' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B1800' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B1800' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B1800' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B1700' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B1900' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B1900' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B1900' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B1800' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B2500' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B2500' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B2700' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B2700' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B2700' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B2500' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B2800' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B2800' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B2800' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B2700' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B2900' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B2900' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B2900' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B2800' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B3500' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B3500' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B3700' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B3700' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B3700' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B3500' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B3800' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B3800' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B3800' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B3700' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B3900' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B3900' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B3900' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B3800' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B4700' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B4700' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B4700' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B3500' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B4800' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B4800' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B4800' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B4700' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B4900' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B4900' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B4900' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B4800' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
             WHERE a.system_name = 'B5000' AND a.manufacturer = b.company_name
                 CREATE (a)-[mf:MANUFACTURER]->(b)
                 RETURN mf;
@@ -316,6 +605,144 @@ MATCH (a:System)
             WHERE a.system_name = 'B5000' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B5000' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B205' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B5500' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B5500' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B5500' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B5000' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B5700' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B5700' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B5700' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B5500' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B6500' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B6500' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B6500' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B5000' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B6700' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B6700' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B6700' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B6500' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B7700' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B7700' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B7700' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B6500' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'B8500' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'B8500' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B8500' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B5500' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'B8500' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'D825' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'D825' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'D825' AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'D825' AND a.manufacturer = 'Burroughs') AND (b.system_name = 'B5000' AND b.manufacturer = 'Burroughs')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -853,13 +1280,13 @@ MATCH (a:System)
 MATCH (a:System)
     WITH a
         MATCH (b:Company)
-            WHERE a.system_name = 'X1' AND a.manufacturer = b.company_name
+            WHERE (a.system_name = 'X1' AND a.manufacturer = 'Cray') AND a.manufacturer = b.company_name
                 CREATE (a)-[mf:MANUFACTURER]->(b)
                 RETURN mf;
 MATCH (a:System)
     WITH a
         MATCH (b:Year)
-            WHERE a.system_name = 'X1' AND a.introduced = b.year
+            WHERE (a.system_name = 'X1' AND a.manufacturer = 'Cray') AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
 
@@ -996,52 +1423,637 @@ MATCH (a:System)
 MATCH (a:System)
     WITH a
         MATCH (b:Company)
-            WHERE a.system_name = 'X1' AND a.manufacturer = b.company_name
+            WHERE (a.system_name = 'X1' AND a.manufacturer = 'Electrologica') AND a.manufacturer = b.company_name
                 CREATE (a)-[mf:MANUFACTURER]->(b)
                 RETURN mf;
 MATCH (a:System)
     WITH a
         MATCH (b:Year)
-            WHERE a.system_name = 'X1' AND a.introduced = b.year
+            WHERE (a.system_name = 'X1' AND a.manufacturer = 'Electrologica') AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
 
 MATCH (a:System)
     WITH a
         MATCH (b:Company)
-            WHERE a.system_name = 'X8' AND a.manufacturer = b.company_name
+            WHERE (a.system_name = 'X8' AND a.manufacturer = 'Electrologica') AND a.manufacturer = b.company_name
                 CREATE (a)-[mf:MANUFACTURER]->(b)
                 RETURN mf;
 MATCH (a:System)
     WITH a
         MATCH (b:Year)
-            WHERE a.system_name = 'X8' AND a.introduced = b.year
+            WHERE (a.system_name = 'X8' AND a.manufacturer = 'Electrologica') AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
 
 MATCH (a:System)
     WITH a
         MATCH (b:Company)
-            WHERE a.system_name = 'Atlas' AND a.manufacturer = b.company_name
+            WHERE (a.system_name = 'Atlas' AND a.manufacturer = 'Engineering Research Associates') AND a.manufacturer = b.company_name
                 CREATE (a)-[mf:MANUFACTURER]->(b)
                 RETURN mf;
 MATCH (a:System)
     WITH a
         MATCH (b:Year)
-            WHERE a.system_name = 'Atlas' AND a.introduced = b.year
+            WHERE (a.system_name = 'Atlas' AND a.manufacturer = 'Engineering Research Associates') AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
 
 MATCH (a:System)
     WITH a
         MATCH (b:Company)
-            WHERE a.system_name = '1101' AND a.manufacturer = b.company_name
+            WHERE (a.system_name = '1101' AND a.manufacturer = 'Engineering Research Associates') AND a.manufacturer = b.company_name
                 CREATE (a)-[mf:MANUFACTURER]->(b)
                 RETURN mf;
 MATCH (a:System)
     WITH a
         MATCH (b:Year)
-            WHERE a.system_name = '1101' AND a.introduced = b.year
+            WHERE (a.system_name = '1101' AND a.manufacturer = 'Engineering Research Associates') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1102' AND a.manufacturer = 'Engineering Research Associates') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1102' AND a.manufacturer = 'Engineering Research Associates') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1102' AND a.manufacturer = 'Engineering Research Associates') AND (b.system_name = '1101' AND b.manufacturer = 'Engineering Research Associates')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1103' AND a.manufacturer = 'Engineering Research Associates') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1103' AND a.manufacturer = 'Engineering Research Associates') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1103' AND a.manufacturer = 'Engineering Research Associates') AND (b.system_name = '1102' AND b.manufacturer = 'Engineering Research Associates')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = 'UNIVAC I' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = 'UNIVAC I' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = 'UNIVAC File Computer' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = 'UNIVAC File Computer' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = 'UNIVAC II' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = 'UNIVAC II' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'UNIVAC II' AND a.manufacturer = 'Sperry') AND (b.system_name = 'UNIVAC I' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = 'UNIVAC III' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = 'UNIVAC III' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'UNIVAC III' AND a.manufacturer = 'Sperry') AND (b.system_name = 'UNIVAC II' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '490' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '490' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '491' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '491' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '491' AND a.manufacturer = 'Sperry') AND (b.system_name = '490' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '492' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '492' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '492' AND a.manufacturer = 'Sperry') AND (b.system_name = '490' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '494' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '494' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '494' AND a.manufacturer = 'Sperry') AND (b.system_name = '490' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '418' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '418' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1004' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1004' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1005' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1005' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1005' AND a.manufacturer = 'Sperry') AND (b.system_name = '1004' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1101' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1101' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1101' AND a.manufacturer = 'Sperry') AND (b.system_name = '1101' AND b.manufacturer = 'Engineering Research Associates')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1103' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1103' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1103' AND a.manufacturer = 'Sperry') AND (b.system_name = '1103' AND b.manufacturer = 'Engineering Research Associates')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1103A' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1103A' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1103A' AND a.manufacturer = 'Sperry') AND (b.system_name = '1103' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1104' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1104' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1104' AND a.manufacturer = 'Sperry') AND (b.system_name = '1103' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1105' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1105' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1105' AND a.manufacturer = 'Sperry') AND (b.system_name = '1104' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1107' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1107' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1107' AND a.manufacturer = 'Sperry') AND (b.system_name = '1105' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1108' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1108' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1108' AND a.manufacturer = 'Sperry') AND (b.system_name = '1107' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1108A' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1108A' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1108A' AND a.manufacturer = 'Sperry') AND (b.system_name = '1108' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1106' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1106' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1106' AND a.manufacturer = 'Sperry') AND (b.system_name = '1108' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1110' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1110' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1110' AND a.manufacturer = 'Sperry') AND (b.system_name = '1108A' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1100/10' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1100/10' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1100/10' AND a.manufacturer = 'Sperry') AND (b.system_name = '1106' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1100/20' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1100/20' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1100/20' AND a.manufacturer = 'Sperry') AND (b.system_name = '1108' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1100/40' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1100/40' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1100/40' AND a.manufacturer = 'Sperry') AND (b.system_name = '1110' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1100/60' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1100/60' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1100/60' AND a.manufacturer = 'Sperry') AND (b.system_name = '1100/10' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1100/60' AND a.manufacturer = 'Sperry') AND (b.system_name = '1100/20' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1100/70' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1100/70' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1100/70' AND a.manufacturer = 'Sperry') AND (b.system_name = '1100/60' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1100/80' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1100/80' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1100/80' AND a.manufacturer = 'Sperry') AND (b.system_name = '1110' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1100/80' AND a.manufacturer = 'Sperry') AND (b.system_name = '494' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '1100/90' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '1100/90' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1100/90' AND a.manufacturer = 'Sperry') AND (b.system_name = '1100/80' AND b.manufacturer = 'Sperry')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '9200' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '9200' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '9300' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '9300' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '9400' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '9400' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE (a.system_name = '9700' AND a.manufacturer = 'Sperry') AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE (a.system_name = '9700' AND a.manufacturer = 'Sperry') AND a.introduced = b.year
+                CREATE (a)-[yi:INTRODUCED]->(b)
+                RETURN yi;
+
+MATCH (a:System)
+    WITH a
+        MATCH (b:Company)
+            WHERE a.system_name = 'Datatron 203' AND a.manufacturer = b.company_name
+                CREATE (a)-[mf:MANUFACTURER]->(b)
+                RETURN mf;
+MATCH (a:System)
+    WITH a
+        MATCH (b:Year)
+            WHERE a.system_name = 'Datatron 203' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
 
