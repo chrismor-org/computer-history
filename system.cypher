@@ -756,6 +756,12 @@ MATCH (a:System)
             WHERE a.system_name = '924' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '924' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '1604' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -769,6 +775,12 @@ MATCH (a:System)
             WHERE a.system_name = '160A' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '160A' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '1604' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -782,6 +794,12 @@ MATCH (a:System)
             WHERE a.system_name = '1604' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '1604' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '1103' AND b.manufacturer = 'Engineering Research Associates')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -808,6 +826,12 @@ MATCH (a:System)
             WHERE a.system_name = '3100' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '3100' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '3600' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -821,6 +845,12 @@ MATCH (a:System)
             WHERE a.system_name = '3200' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '3200' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '3600' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -834,6 +864,12 @@ MATCH (a:System)
             WHERE a.system_name = '3300' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '3300' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '3600' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -847,6 +883,12 @@ MATCH (a:System)
             WHERE a.system_name = '3400' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '3400' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '3600' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -860,6 +902,12 @@ MATCH (a:System)
             WHERE a.system_name = '3600' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '3600' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '1604' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -873,19 +921,12 @@ MATCH (a:System)
             WHERE a.system_name = '6200' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
-
 MATCH (a:System)
     WITH a
-        MATCH (b:Company)
-            WHERE a.system_name = '6300' AND a.manufacturer = b.company_name
-                CREATE (a)-[mf:MANUFACTURER]->(b)
-                RETURN mf;
-MATCH (a:System)
-    WITH a
-        MATCH (b:Year)
-            WHERE a.system_name = '6300' AND a.introduced = b.year
-                CREATE (a)-[yi:INTRODUCED]->(b)
-                RETURN yi;
+        MATCH (b:System)
+            WHERE (a.system_name = '6200' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '6600' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -899,6 +940,12 @@ MATCH (a:System)
             WHERE a.system_name = '6400' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '6400' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '6600' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -912,6 +959,12 @@ MATCH (a:System)
             WHERE a.system_name = '6500' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '6500' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '6600' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -925,6 +978,12 @@ MATCH (a:System)
             WHERE a.system_name = '6600' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '6600' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '1604' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -938,6 +997,12 @@ MATCH (a:System)
             WHERE a.system_name = '6700' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '6700' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '6600' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -951,6 +1016,12 @@ MATCH (a:System)
             WHERE a.system_name = '7600' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '7600' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '6600' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -964,6 +1035,12 @@ MATCH (a:System)
             WHERE a.system_name = '8600' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = '8600' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '7600' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -977,6 +1054,12 @@ MATCH (a:System)
             WHERE a.system_name = 'Cyber 18' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'Cyber 18' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '1700' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -990,6 +1073,12 @@ MATCH (a:System)
             WHERE a.system_name = 'Cyber 70' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'Cyber 70' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '6600' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -1003,6 +1092,12 @@ MATCH (a:System)
             WHERE a.system_name = 'Cyber 170' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'Cyber 170' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '7600' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -1029,6 +1124,12 @@ MATCH (a:System)
             WHERE a.system_name = 'Cyber 203' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'Cyber 203' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = 'STAR-100' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -1042,6 +1143,12 @@ MATCH (a:System)
             WHERE a.system_name = 'Cyber 205' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'Cyber 205' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = 'STAR-100' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
@@ -1094,6 +1201,12 @@ MATCH (a:System)
             WHERE a.system_name = 'STAR-100' AND a.introduced = b.year
                 CREATE (a)-[yi:INTRODUCED]->(b)
                 RETURN yi;
+MATCH (a:System)
+    WITH a
+        MATCH (b:System)
+            WHERE (a.system_name = 'STAR-100' AND a.manufacturer = 'Control Data Corporation') AND (b.system_name = '7600' AND b.manufacturer = 'Control Data Corporation')
+                CREATE (a)-[df:DEVELOPED_FROM]->(b)
+                RETURN df;
 
 MATCH (a:System)
     WITH a
